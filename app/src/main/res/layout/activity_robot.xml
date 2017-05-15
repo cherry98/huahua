@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_robot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.rose.guojiangzhibo.activity.RobotActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:src="@mipmap/btn_back_pre" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="花花客服"
+            android:textColor="#fff"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_robot"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:padding="10dp"></android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp">
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="#00ffffff"
+            android:scaleType="centerInside"
+            android:src="@mipmap/icon_smile" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="#00ffffff"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:scaleType="centerInside"
+            android:src="@mipmap/btn_picture_nor" />
+
+        <EditText
+            android:id="@+id/edit_robot"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="8"
+            android:background="@mipmap/btn_bg_pre_o"
+            android:hint="请输入您的问题~"
+            android:singleLine="true"
+            android:textSize="12sp" />
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/sendbt"
+            android:onClick="onClick"
+            android:text="发送" />
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/expressionview"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:visibility="gone"></android.support.v4.view.ViewPager>
+
+</LinearLayout>

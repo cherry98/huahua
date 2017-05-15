@@ -1,0 +1,34 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFAF0"
+    android:orientation="vertical"
+    tools:context="com.rose.guojiangzhibo.fragment.onefragments.HotFragment">
+
+    <ScrollView
+        android:id="@+id/scrollview_hotfragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.rose.guojiangzhibo.viewpager.BannerView
+                android:id="@+id/viewpager_hotfragment"
+                android:layout_width="match_parent"
+                android:layout_height="180dp" />
+
+            <com.rose.guojiangzhibo.layout.MyPullToRefreshListView
+                android:id="@+id/listview_hotfragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:divider="@null"
+                android:dividerHeight="10dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
